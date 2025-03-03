@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/STX5/llm-translate/pkg/chat/qwen"
 	"github.com/STX5/llm-translate/pkg/document/txt"
+	"github.com/STX5/llm-translate/pkg/llm/qwen"
 	"github.com/STX5/llm-translate/pkg/translator"
 	"github.com/STX5/llm-translate/util"
 )
@@ -35,7 +35,7 @@ func main() {
 	chatCli := qwen.NewClient(*apiKey, *debug)
 
 	// 创建翻译器
-	qwenTranslator := translator.NewQwenTranslator(chatCli)
+	qwenTranslator := translator.NewQwenTranslator(*chatCli)
 
 	// 创建TXT翻译器
 	txtTranslator, err := txt.NewTxtTranslator(*inputFile)

@@ -3,17 +3,17 @@ package translator
 import (
 	"errors"
 
-	"github.com/STX5/llm-translate/pkg/chat"
+	"github.com/STX5/llm-translate/pkg/llm/qwen"
 	"github.com/STX5/llm-translate/util"
 )
 
 // QwenTranslator 通义千问翻译器实现
 type QwenTranslator struct {
-	ChatCli chat.ChatCli
+	ChatCli qwen.QwenCli
 }
 
 // NewQwenTranslator 创建新的通义千问翻译器
-func NewQwenTranslator(chatCli chat.ChatCli) *QwenTranslator {
+func NewQwenTranslator(chatCli qwen.QwenCli) *QwenTranslator {
 	return &QwenTranslator{
 		ChatCli: chatCli,
 	}

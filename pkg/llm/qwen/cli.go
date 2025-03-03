@@ -3,7 +3,6 @@ package qwen
 import (
 	"fmt"
 
-	"github.com/STX5/llm-translate/pkg/chat"
 	"github.com/STX5/llm-translate/util"
 
 	"github.com/swxctx/xlog"
@@ -29,7 +28,7 @@ type QwenCli struct {
 }
 
 // NewClient 初始化请求客户端
-func NewClient(apiKey string, debug ...bool) chat.ChatCli {
+func NewClient(apiKey string, debug ...bool) *QwenCli {
 	client := &QwenCli{
 		apiKey:               apiKey,
 		baseUri:              "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
