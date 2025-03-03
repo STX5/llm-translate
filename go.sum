@@ -1,0 +1,4 @@
+github.com/swxctx/ghttp v1.0.0 h1:3B5e1prETsEIiVvwDC4b9FR2u1NOvvah4/siWq2p728=
+github.com/swxctx/ghttp v1.0.0/go.mod h1:p/T8rIDSYhRd6g4hcvReOesPHMQu0+Pi/LkZdWKdleY=
+github.com/swxctx/xlog v0.0.0-20240415025414-1ab297de72e4 h1:lD/jc3mRHldxM3ZnMbma9xgj316zGiqJwCowlic9C9c=
+github.com/swxctx/xlog v0.0.0-20240415025414-1ab297de72e4/go.mod h1:1iTMvlNk25Pw/ZaOXqa6s3h1YDUQkTUsXyMDxwAdIUI=
